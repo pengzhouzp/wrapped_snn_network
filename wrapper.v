@@ -11,7 +11,7 @@
 //`define USE_IRQ 1
 
 // update this to the name of your module
-module wrapped_project(
+module wrapped_snn_network(
 `ifdef USE_POWER_PINS
     inout vccd1,	// User area 1 1.8V supply
     inout vssd1,	// User area 1 digital ground
@@ -151,6 +151,24 @@ module wrapped_project(
     // Instantiate your module here, 
     // connecting what you need of the above signals. 
     // Use the buffered outputs for your module's outputs.
+
+    snn_network snn_network (
+    `ifdef USE_POWER_PINS
+        .vccd1(vccd1),	// User area 1 1.8V power
+        .vssd1(vssd1),	// User area 1 digital ground
+    `endif
+
+        .clk(wb_clk_i),
+        // .reset(la1_data_in[0]),  // hard-wired reset
+
+        // IO Pads
+        .in_signal(io_in[23:8]),
+        .out_spk(buf_io_out[31:24]),
+        // .io_oeb(buf_io_oeb[25:16]), // low io_oeb enables the output
+        .reset(io_in[32])
+        
+
+);
 
 endmodule 
 `default_nettype wire
