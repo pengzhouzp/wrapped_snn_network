@@ -1,21 +1,22 @@
 --- 
 # information
 project: 
-  title: "title"
-  description: "description"
+  title: "snn-asic"
+  description: "asic snn accelerator with adaptive threshold neurons and recurrent connective synapses"
   picture: docs/empty.png
-  author: "Author"
+  author: "Peng Zhou"
   license: LICENSE
+  waive_module_test: "no module test yet"
 
 # optional interfaces you want to use: gpio, la1, la2, la3, irq, clk2, wishbone & openram
-interfaces: ['la1', 'gpio']
+interfaces: ['gpio']
 
 # test within caravel
 caravel_test:
   recipe: "coco_test"
-  directory: "caravel_test"
-  id: 1
-  module_name: "wrapped_project"
+  directory: "caravel_snn_test"
+  id: 4
+  module_name: "wrapped_snn_network"
 
 # module test
 module_test:
