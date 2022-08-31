@@ -36,7 +36,11 @@ openlane:
 # source required for various configs and module instantiation
 source:
     - wrapper.v
-    - other source files here
+    - src/input_neuron.v
+    - src/hidden_neuron.v
+    - src/output_neuron.v
+    - src/snn_network.v
+    - src/spk_counter.v
 
 # gds - check nothing on metal 5, DRC & LVS
 final:
