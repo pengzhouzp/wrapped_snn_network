@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed Aug 31 12:26:40 2022
+[*]
+[dumpfile] "/home/matt/work/asic-workshop/shuttle7/zero_to_asic_mpw7/verilog/dv/caravel_snn_test/snn_network.vcd"
+[dumpfile_mtime] "Wed Aug 31 12:25:13 2022"
+[dumpfile_size] 658047
+[savefile] "/home/matt/work/asic-workshop/shuttle7/zero_to_asic_mpw7/verilog/dv/caravel_snn_test/snn_test.gtkw"
+[timestart] 0
+[size] 2488 1519
+[pos] -51 -51
+*-28.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] snn_network_tb.
+[treeopen] snn_network_tb.uut.
+[treeopen] snn_network_tb.uut.mprj.
+[treeopen] snn_network_tb.uut.mprj.wrapped_etpu_3.
+[sst_width] 638
+[signals_width] 300
+[sst_expanded] 1
+[sst_vpaned_height] 477
+@28
+snn_network_tb.flash_clk
+snn_network_tb.flash_csb
+snn_network_tb.flash_io0
+snn_network_tb.flash_io1
+@22
+snn_network_tb.in_signal[15:0]
+snn_network_tb.out_spk[7:0]
+@29
+snn_network_tb.uut.mprj.wrapped_etpu_3.active
+[pattern_trace] 1
+[pattern_trace] 0
